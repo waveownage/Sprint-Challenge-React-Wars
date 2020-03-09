@@ -3,7 +3,7 @@ import axios from "axios";
 import StarWarsCard from "./StarWarsCard";
 
 function StarWarsData() {
-  const [character, setCharacter] = useState();
+  const [character, setCharacter] = useState([]);
 
   useEffect(() => {
     axios
@@ -16,18 +16,23 @@ function StarWarsData() {
   }, []);
   return (
     <div>
-      <ul>
-        <StarWarsCard
-          Name={character.name}
-          Height={character.height}
-          Mass={character.mass}
-          Hair_color={character.hair_color}
-          Skin_color={character.skin_color}
-          Eye_color={character.eye_color}
-          Birth_year={character.birth_year}
-          Gender={character.gender}
-        />
-      </ul>
+        {character.map(arr => {
+            return(
+            <ul>
+            <StarWarsCard
+              name={arr.name}
+              height={arr.height}
+              mass={arr.mass}
+              hair_color={arr.hair_color}
+              skin_color={arr.skin_color}
+              eye_color={arr.eye_color}
+              birth_year={arr.birth_year}
+              gender={arr.gender}
+            />
+            </ul> )
+
+        })}
+      
     </div>
   );
 }
