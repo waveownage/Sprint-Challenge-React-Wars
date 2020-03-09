@@ -1,13 +1,18 @@
-function StarWarsCar(props) {
+import React from 'react';
+
+const StarWarsCard = props => {
     return(
-    <Card>
-            <p>name: {props.character.name}</p>
-            <p>height: {props.character.height}</p>
-            <p>mass: {props.character.mass}</p>
-            <p>gender: {props.character.gender}</p>
-            <p>hair color: {props.character.hair_color}</p>  
-    </Card>         
-    )
-}
+        <li className="star-card">
+            <p>Name: {props.name}</p>
+            <p>Height: {props.height}</p>
+            <p>Mass: {props.mass}</p>
+            <p>Hair_color: {props.hair_color}</p>
+            <p>Skin_color: {props.skin_color}</p>
+            <p>Eye_color: {props.eye_color}</p>
+            <p>Birth_year: {props.birth_year}</p>
+            <p>Gender: {props.gender}</p>  
+        </li>       
+    );
+};
 
 export default StarWarsCard;
