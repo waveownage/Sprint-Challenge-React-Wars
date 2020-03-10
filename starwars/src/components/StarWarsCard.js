@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledLi = styled.li`
-    border: solid black 1px;
-    color: grey;
+    border: solid #443e3e 1px;
+    color: #443e3e;
     width: 80%;
     margin-left: 8%;
     padding: 2%;
