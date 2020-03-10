@@ -10,10 +10,12 @@ function StarWarsData() {
       .get(`https://swapi.co/api/people/`)
       .then(response => {
         console.log(response.data.results);
+        console.log(response.data);
         setCharacter(response.data.results);
       })
       .catch(err => console.log(err));
   }, []);
+
   return (
     <div>
         {character.map(arr => {
