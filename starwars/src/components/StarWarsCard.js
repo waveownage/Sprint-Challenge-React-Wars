@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const StyledLi = styled.li`
     border: solid black 1px;
@@ -24,20 +24,19 @@ const StyledLi = styled.li`
     }
 `;
 
-
 const StarWarsCard = props => {
-    return(
-            <StyledLi>
-                <p>Name: {props.name}</p>
-                <p>Height: {props.height}</p>
-                <p>Mass: {props.mass}</p>
-                <p>Hair_color: {props.hair_color}</p>
-                <p>Skin_color: {props.skin_color}</p>
-                <p>Eye_color: {props.eye_color}</p>
-                <p>Birth_year: {props.birth_year}</p>
-                <p>Gender: {props.gender}</p>  
-            </StyledLi>     
-    );
+  return (
+    <StyledLi>
+      <p>Name: {props.name}</p>
+      <p>Height: {props.height}</p>
+      <p>Mass: {props.mass}</p>
+      <p>Hair_color: {props.hair_color}</p>
+      <p>Skin_color: {props.skin_color}</p>
+      <p>Eye_color: {props.eye_color}</p>
+      <p>Birth_year: {props.birth_year}</p>
+      <p>Gender: {props.gender}</p>
+    </StyledLi>
+  );
 };
 
 export default StarWarsCard;

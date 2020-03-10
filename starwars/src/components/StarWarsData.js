@@ -18,9 +18,9 @@ function StarWarsData() {
 
   return (
     <div>
-        {character.map(arr => {
-            return(
-            <ul>
+      {character.map(arr => {
+        return (
+          <ul>
             <StarWarsCard
               name={arr.name}
               height={arr.height}
@@ -31,10 +31,9 @@ function StarWarsData() {
               birth_year={arr.birth_year}
               gender={arr.gender}
             />
-            </ul> )
-
-        })}
-      
+          </ul>
+        );
+      })}
     </div>
   );
 }
