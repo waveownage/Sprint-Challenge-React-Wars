@@ -25,14 +25,18 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+React allows multiple components to work together and allow a webpage to be able to change without having to reload. Allows for more interactive pages like Twitter to exist.
+
 
 - [ ] What does it mean to _think_ in react?
 
-- [ ] Describe state.
+To Map out different components that come together and work in harmony to achieve great things. 
 
-- [ ] Describe props.
+- [ ] Describe state. An object that determines how that component renders and behaves.
 
-- [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+- [ ] Describe props. A way to send data to components.
+
+- [ ] What are side effects, and how do you sync effects in a React component to state or prop changes? It is useful to use the UseEffect hook that calls an API. That way we can sync the effects to a component.
 
 ## Project Set Up
 
